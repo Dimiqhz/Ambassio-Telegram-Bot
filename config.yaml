@@ -1,0 +1,49 @@
+############################################################
+#                                                          #
+# Author: Dimiqhz                                          #
+# Started: 18 December, 2024                               #
+# GitHub: https://github.com/Dimiqhz/Ambassio-Telegram-Bot #
+#                                                          #
+############################################################
+
+# DO NOT TOUCH IT IF YOU DON'T KNOW WHAT IT'S DOING
+version: 0.1
+
+###############################
+# TELEGRAM MAIN CONFIGURATION #
+###############################
+
+# TELEGRAM API TOKEN
+# You can get it from @BotFather
+token: "yourbottoken"
+
+#########################
+# WEBHOOK CONFIGURATION #
+#########################
+
+webhook:
+  host: "0.0.0.0:3000"
+  secret: "yoursecret"
+  webhook_url: "https://yourserver.com/webhook"
+
+#####################
+# DATABASE AND DATA #
+#####################
+
+databse:
+  # You can use H2, SQLITE, MYSQL to store data
+  # Specify your credentials for the database
+  type: "MYSQL"
+  host: "127.0.0.1:3306"
+  username: "yourusername"
+  password: "yourpassword"
+  database: "yourdatabasename"
+
+logs:
+  # You can specify INFO, DEBUG
+  # Debugging indicates more information in the log when using the bot.
+  log_level: "DEBUG"
+  # The path to the log file
+  path: "/storage/bot.log"
+  # Specify this if you want to keep the debugging log separate.
+  debug_path: "/storage/debug.log"
